@@ -1,3 +1,6 @@
+//scopes are curly braces "{}" in functions and conditional statemnets and loops but not in obejcts
+//we don't use var because of the scope concept. var does not follow scope and 
+//can be accessed outside of the scope to which it is declared causing confusion and unexpected output
 //var c = 300
 let a = 300
 if (true) {
@@ -52,8 +55,8 @@ function addone(num){
 
 
 
-addTwo(5) //this will throw error as addtwo is a variable name 
-//          which has stored function not a function name itself
-const addTwo = function(num){
+addTwo(5) //this will throw error as addtwo is a variable name which has stored function not
+//          a function name itself thus calling addTwo before function will throw error
+const addTwo = function(num){ //Another way of declaring functions
     return num + 2
 }
