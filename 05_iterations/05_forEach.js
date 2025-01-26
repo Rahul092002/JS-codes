@@ -33,7 +33,12 @@ const myCoding = [
     },
 ]
 
-myCoding.forEach( (item) => {
+// myCoding.forEach( (item) => {
     
-    console.log(item.languageName);
-} )
+//     console.log(item.languageName);
+// } )
+
+//forEach loop does not return anything
+const code = myCoding.forEach((item)=>{
+    return item;
+}) // does not return value
